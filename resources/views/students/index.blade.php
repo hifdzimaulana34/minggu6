@@ -14,7 +14,7 @@
                     </div>
                     @endif
 
-                    <a href="/students/userCreate" class="btn btn-primary">Add Data</a><br><br>
+                    <a href="/students/create" class="btn btn-primary">Add Data</a><br><br>
                     <form class="form" method="get" action="{{route('search')}}">
                             <label for="search" class="d-block mr-2">Pencarian Data Mahasiswa</label>
                             <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Masukkan nama">
@@ -43,7 +43,7 @@
                             <tr>
                                 <td>{{ $s->nim }}</td>
                                 <td>{{ $s->name }}</td>
-                                <td>{{ $s->class }}</td>
+                                <td>{{ $s->kelas->class_name }}</td>
                                 <td>{{ $s->department }}</td>
                                 <td>
                                     <form action="/students/{{$s->id}}" method="post">
