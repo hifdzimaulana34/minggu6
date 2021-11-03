@@ -27,3 +27,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('students', StudentController::class);
 Route::resource('users', UserController::class);
 Route::get('/search', [StudentController::class, 'search'])->name('search');
+Route::get('students/{id}/nilai', [StudentController::class, 'menu_nilai']);

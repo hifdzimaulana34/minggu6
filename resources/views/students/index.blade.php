@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
     <div class="col-md-8">
+    <div class="card-header" align="center"><b>{{ __('JURUSAN TEKNOLOGI INFORMASI POLITEKNIK NEGERI MALANG') }}</b></div>
         <div class="card">
             <div class="card-header">{{ __('STUDENT DATA') }}</div>
 
@@ -49,6 +50,7 @@
                                     <form action="/students/{{$s->id}}" method="post">
                                         <a href="/students/{{$s->id}}/edit" class="btn btn-warning">Edit</a>
                                         <a href="/students/{{$s->id}}" class="btn btn-primary">View</a>
+                                        <a href="/students/{{$s->id}}/nilai" class="btn btn-warning">Nilai</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" name="delete" class="btn btn-danger">Delete</button>
