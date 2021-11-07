@@ -23,7 +23,8 @@
                                 <th>Name</th>
                                 <th>Class</th>
                                 <th>Department</th>
-                                <th>Phone Number</th> 
+                                <th>Phone Number</th>
+                                <th>Profile Picture</th> 
                             </tr>
                         </thead>
                         <tbody>
@@ -34,6 +35,7 @@
                                 <td>{{$student->kelas->class_name}}</td>
                                 <td>{{$student->department}}</td>
                                 <td>{{$student->phone_number}}</td>
+                                <td><img width="70px" src="{{asset('storage/'.$student->photo)}}"></td>
                             </tr>
                             <a href="/students" class="btn btn-primary">Return</a>
                         </tbody>
