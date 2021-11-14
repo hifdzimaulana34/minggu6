@@ -28,6 +28,15 @@
                             <label for="email">Email</label>
                             <input type="text" class="form-control" required="required" name="email"></br>
                         </div>
+                        <div class="form-group row">
+                            <label for="role" class="col-md-1 col-form-label text-md-left">{{ __('Role') }}</label>
+                            <div class="col-md-6">
+                                <select class="form-control" name="role">
+                                <option value="user">User</option>
+                                <option value="admin">Admin</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="passowrd">Password</label>
                             <input type="text" class="form-control" required="required" name="password"></br>

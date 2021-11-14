@@ -67,6 +67,12 @@
                                     <a class="nav-link" href="users">{{ __('USERCRUD') }}</a>
                             </li>
 
+                            <li class="nav-item">
+                            @can('manage-users')
+                            <a class="nav-link" href="/users">User Data</a>
+                            @endcan
+                            </li>
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
